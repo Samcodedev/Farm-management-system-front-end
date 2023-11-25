@@ -1,0 +1,23 @@
+Table{
+    overflow-x: scroll;
+}
+Table tbody tr td img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+Table tbody tr td #pup{
+    position: fixed;
+    width: 90vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+Table tbody tr td:hover #pup{
+    display: block;
+}
+Table thead tr th{
+    position: sticky;
+}

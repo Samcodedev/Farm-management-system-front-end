@@ -1,0 +1,115 @@
+.ProductDetails{
+    display: flex;
+    justify-content: center;
+}
+.ProductDetails .sub-ProductDetails{
+    width: 95%;
+    display: flex;
+    margin-bottom: 20px;
+    /* background-color: var(--gray); */
+}
+.ProductDetails .sub-ProductDetails .img-div{
+    width: 50%;
+}
+.ProductDetails .sub-ProductDetails .img-div img{
+    width: 98%;
+    position: relative;
+    border-radius: 5px;
+}
+.ProductDetails .sub-ProductDetails .details{
+    width: 50%;
+    border: 2px solid #dee2e6;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.ProductDetails .sub-ProductDetails .details .top{
+    padding: 30px 20px 5px 20px;
+}
+.ProductDetails .sub-ProductDetails .details .top small{
+    color: rgb(255, 255, 255);
+    background-color: var(--brandcolor);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+.ProductDetails .sub-ProductDetails .details .top h2{
+    color: var(--brandcolor);
+    margin-block-end: 0;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.ProductDetails .sub-ProductDetails .details .top h2::first-line
+{
+    text-transform: capitalize;
+}
+.ProductDetails .sub-ProductDetails .details .top p{
+    color: var(--brandcolor-light);
+    margin-bottom: 5px;
+}
+.ProductDetails .sub-ProductDetails .details .top .star{
+    display: flex;
+}
+.ProductDetails .sub-ProductDetails .details .top .star svg{
+    color: rgb(219, 191, 13);
+    font-size: 20px;
+}
+.ProductDetails .sub-ProductDetails .details .top h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.ProductDetails .sub-ProductDetails .details .body{
+    padding: 0px 20px 5px 20px;
+}
+.ProductDetails .sub-ProductDetails .details .body .accordion-body{
+    padding: 0;
+}
+.ProductDetails .sub-ProductDetails .details .bottom{
+    display: flex;
+    padding: 10px 20px 0px 20px;
+    gap: 20px;
+}
+.ProductDetails .sub-ProductDetails .details .bottom button{
+    /* padding: 10px 20px;
+    border: 2px solid var(--brandcolor);
+    color: #fff;
+    background-color: var(--brandcolor);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; */
+    transition-duration: 3s;
+}
+/* .ProductDetails .sub-ProductDetails .details .bottom button:first-child{
+    background-color: var(--brandcolor);
+    border-color: var(--brandcolor);
+    color: #fff;
+} */
+.ProductDetails .sub-ProductDetails .details .bottom button svg{
+    font-size: 20px;
+}
+
+.ProductDetails .sub-ProductDetails .details .bottom button:last-child{
+    background-color: var(--brandcolor-light);
+    border-color: var(--brandcolor-light);
+}
+.ProductDetails .sub-ProductDetails .details .bottom button #loading{
+    /* animation: loading 1s ease infinite 0s; */
+    animation: loading infinite .4s ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(340deg);
+    }
+}

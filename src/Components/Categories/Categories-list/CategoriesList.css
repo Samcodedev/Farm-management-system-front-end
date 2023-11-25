@@ -1,0 +1,24 @@
+.CategoriesList{
+    margin: 0 30px;
+    height: 75vh;
+}
+.CategoriesList .Categories-grouping{
+    padding: 20px 10px;
+}
+.CategoriesList .Categories-grouping h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--brandcolor);
+}
+.CategoriesList .Categories-grouping .Categories-cards{
+    width: 100%;
+    overflow: scroll;
+}
+.CategoriesList .Categories-grouping .Categories-cards .scroll{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+.CategoriesList .Categories-grouping .Categories-cards::-webkit-scrollbar{
+    display: none;
+}

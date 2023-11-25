@@ -1,0 +1,12 @@
+.StockDataPage{
+    display: flex;
+    justify-content: center;
+}
+.StockDataPage .sub-StockDataPage{
+    width: 95%;
+}
+.StockDataPage .sub-StockDataPage .top{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+}

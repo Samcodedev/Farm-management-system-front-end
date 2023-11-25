@@ -1,0 +1,16 @@
+[
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "New password",
+        "type": "password",
+        "onChange": "password"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Confirm password",
+        "type": "password",
+        "onChange": "confirmpassword"
+    }
+]

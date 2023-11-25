@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: url('https://s41998.pcdn.co/wp-content/uploads/2020/03/AdobeStock_283109721-640x360.jpeg.webp');
+    background-size: cover;
+}
+.header .sub-header{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.header .sub-header .text-div{
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 70px;
+    height: fit-content;
+    margin-bottom: 150px;
+    /* background-color: aqua; */
+}
+.header .sub-header .text-div h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var( --brandcolor-dark);
+}
+.header .sub-header .text-div h4{
+    color: var(--brandcolor-light);
+    font-size: 1rem;
+}
+.header .sub-header .img-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .sub-header .img-div img{
+    position: relative;
+    width: 50%;
+    border-radius: 50%;
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.541),
+                -0px -5px 20px rgb(0, 0, 0, 0.541); */
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .header .sub-header{
+        flex-direction: column;
+        height: 100%;
+    }
+    .header .sub-header .text-div{
+        width: 80%;
+    }
+    .header .sub-header .img-div{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}

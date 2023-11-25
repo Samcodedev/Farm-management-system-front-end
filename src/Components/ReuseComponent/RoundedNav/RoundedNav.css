@@ -1,0 +1,12 @@
+.RoundedNav{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+}
+.RoundedNav li{
+    list-style: none;
+    color: #198754;
+}

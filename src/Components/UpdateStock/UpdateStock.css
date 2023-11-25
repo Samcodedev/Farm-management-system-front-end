@@ -1,0 +1,39 @@
+.UpdateStock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+.UpdateStock .sub-UpdateStock{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.UpdateStock .sub-UpdateStock form{
+    width: 80%;
+    height: 100%;
+    background-color: var(--gray);
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.UpdateStock .sub-UpdateStock form input{
+    max-width: 400px;
+}
+.UpdateStock .sub-UpdateStock form h4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.UpdateStock .sub-UpdateStock form img{
+    width: 300px;
+    height: auto;
+    border: 3px solid #ffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.UpdateStock .sub-UpdateStock form .gap-2{
+    margin: 10px 0 20px 0;
+}

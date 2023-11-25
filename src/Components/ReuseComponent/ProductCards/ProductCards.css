@@ -1,0 +1,101 @@
+.ProductCards{
+    width: 320px;
+    height: 550px;
+    border-radius: 10px;
+    margin-right: 20px;
+    /* background-color: red; */
+    /* border: 2.2px solid var(--gray); */
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ProductCards .img-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+.ProductCards .img-div img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.ProductCards .img-div:hover #product{
+    scale: 1.2;
+}
+.ProductCards .details{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    border: 1.5px solid var(--brandcolor);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 20px 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.ProductCards .details::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: var(--brandcolor-opacity);
+    border-radius: 50%;
+    top: -145%;
+    right: 8px;
+    border: 2.5px solid var(--brandcolor);
+}
+.ProductCards .details::after:hover{
+    background-color: var(--brandcolor);
+}
+.ProductCards .details .star{
+    display: flex;
+    padding-bottom: 5px;
+}
+.ProductCards .details .star svg{
+    color: rgb(219, 191, 13);
+}
+.ProductCards .details h5{
+    color: var(--brandcolor);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.ProductCards .details p{
+    font-size: 13px;
+    line-height: 1rem;
+    color: var(--brandcolor-light);
+    margin-bottom: 5px;
+}
+.ProductCards .details h5::first-line{
+    text-transform: capitalize;
+}
+.ProductCards .details h4{
+    font-size: 1.2rem;
+    color: rgb(212, 184, 1);
+}
+.ProductCards .details h4 s{
+    color: rgba(219, 192, 13, 0.493);
+}
+.ProductCards .details button{
+    /* border: 2px solid var(--brandcolor);
+    background-color: var(--brandcolor);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 20px; */
+    width: 100%;
+    margin-top: 18px;
+    /* transition-duration: 2s;
+    transition-timing-function: ease-in; */
+}
+/* .ProductCards .details button:hover{
+    background-color: var(--brandcolor-light);
+    border-color: var(--brandcolor-light);
+    color: #fff;
+} */
+.ProductCards .details button svg{
+    font-size: 20px;
+}

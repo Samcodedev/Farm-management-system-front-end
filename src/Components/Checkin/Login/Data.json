@@ -1,0 +1,16 @@
+[
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Email address",
+        "type": "email",
+        "onChange": "email"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "password",
+        "type": "password",
+        "onChange": "password"
+    }
+]

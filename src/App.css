@@ -1,0 +1,23 @@
+a{
+    color: rgb(10, 55, 91) !important;
+    text-decoration-line: none !important;
+}
+
+.but{
+    padding: 10px 30px;
+    background-color: var(--brandcolor);
+    border: 2px solid var(--brandcolor);
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+:root{
+    --brandcolor: #198754 !important;
+    --subBrand: #0b3d70;
+    --brandcolor-dark: #0a492c !important;
+    --brandcolor-opacity: rgba(23, 130, 80, 0.283) !important;
+    --brandcolor-light: #6bbb96 !important;
+    --gray: #bdbdbd;
+    --light-gray: #e2e3e5;
+}

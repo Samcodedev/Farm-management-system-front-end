@@ -1,0 +1,18 @@
+.CartPage{
+    display: flex;
+    justify-content: center;
+}
+.CartPage .sub-CartPage{
+    width: 80%;
+    /* background-color: var(--light-gray); */
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+.CartPage .sub-CartPage .cart{
+    position: relative;
+    width: 100%;
+}
+
+

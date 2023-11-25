@@ -1,0 +1,84 @@
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.service .sub-service{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+}
+.service .sub-service .img-div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+ }
+.service .sub-service .img-div img{
+    position: relative;
+    width: 70%;
+    border-radius: 10px;
+}
+.service .sub-service .list{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.service .sub-service .list .cards{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.service .sub-service .list .cards:hover{
+    margin-left: 20px;
+}
+.service .sub-service .list .cards .num{
+    background-color: var(--brandcolor-dark);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brandcolor-light);
+    font-weight: 700;
+}
+.service .sub-service .list .cards .text h3{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.service .sub-service .list .cards .text p{
+    margin-bottom: 0;
+    font-size: 12px;
+    max-width: 400px;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .service .sub-service{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service .sub-service .text-div{
+        width: 80%;
+    }
+    .service .sub-service .img-div{
+        width: 80%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    .service .sub-service .list{
+        width: fit-content;
+    }
+}

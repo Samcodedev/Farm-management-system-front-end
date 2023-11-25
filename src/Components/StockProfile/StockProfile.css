@@ -1,0 +1,160 @@
+.StockProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.StockProfile .sub-StockProfile .farmer{
+    display: flex;
+    width: 100%;
+    background-color: var(--brandcolor-light);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-radius: 5px;
+    
+}
+.StockProfile .sub-StockProfile .farmer .weather{
+    background-color: var(--subBrand);
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: fit-content;
+}
+.StockProfile .sub-StockProfile .farmer .weather .content h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+.StockProfile .sub-StockProfile .farmer .weather .content h5{
+    font-size: .6rem;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.StockProfile .sub-StockProfile .farmer .weather .content h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0px;
+    color: #fff;
+}
+.StockProfile .sub-StockProfile .farmer .weather .content small{
+    color: var(--light-gray);
+}
+.StockProfile .sub-StockProfile .farmer .weather .img-div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.StockProfile .sub-StockProfile .farmer .weather .img-div img{
+    width: 190px;
+    position: relative;
+}
+.StockProfile .sub-StockProfile .farmer .details{
+    width: 40%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.StockProfile .sub-StockProfile .farmer .details .img-div{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+.StockProfile .sub-StockProfile .farmer .details .img-div img{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    border: 5px solid var(--brandcolor-dark);
+}
+.StockProfile .sub-StockProfile .farmer .details .text-div{
+    height: fit-content;
+    color: var(--brandcolor-dark);
+}
+.StockProfile .sub-StockProfile .farmer .details .text-div h4{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.StockProfile .sub-StockProfile .farmer .details .text-div h4 span{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.StockProfile .sub-StockProfile .farmer .details .text-div button{
+    padding: 3px 15px;
+    border: 1.5px solid var(--brandcolor-dark);
+    background-color: transparent;
+    border-radius: 5px;
+}
+.StockProfile .sub-StockProfile .farmer .details .text-div button:first-child{
+    margin-bottom: 10px;
+}
+
+
+
+
+.StockProfile .sub-StockProfile{
+    width: 95%;
+
+}
+.StockProfile .sub-StockProfile .stock{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.StockProfile .sub-StockProfile .stock .img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+.StockProfile .sub-StockProfile .stock .img-div img{
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+.StockProfile .sub-StockProfile .stock .text-div{
+    background-color: var(--subBrand);
+    width: fit-content;
+    height: 350px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+.StockProfile .sub-StockProfile .stock .text-div .box{
+    background-color: var(--light-gray);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    color: var(--brandcolor-dark);
+}
+.StockProfile .sub-StockProfile .stock .text-div .box:hover{
+    background-color: var(--brandcolor-light);
+}
+.StockProfile .sub-StockProfile .stock .text-div .box h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.StockProfile .sub-StockProfile .stock .text-div .box p{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}

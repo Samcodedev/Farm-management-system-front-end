@@ -1,0 +1,213 @@
+.AdminProfile{
+    display: flex;
+    justify-content: center;
+}
+.AdminProfile .sub-AdminProfile{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: blue; */
+    align-items: flex-start;
+}
+.AdminProfile .sub-AdminProfile .details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.AdminProfile .sub-AdminProfile .details .profile{
+    background-color: var(--brandcolor-light);
+    width: 100%;
+    max-height: 250px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: var(--brandcolor-dark);
+}
+.AdminProfile .sub-AdminProfile .details .profile .content{
+    width: 50%;
+    margin-left: 50px;
+}
+  
+  .AdminProfile .sub-AdminProfile .details .profile .content .drop-container:hover .drop-title,
+  .AdminProfile .sub-AdminProfile .details .profile .content .drop-container.drag-active .drop-title {
+    color: #222;
+  }
+  
+  .AdminProfile .sub-AdminProfile .details .profile .content .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+  
+  .AdminProfile .sub-AdminProfile .details .profile .content input[type=file] {
+    width: 300px;
+    max-width: 100%;
+    color: var(--brandcolor-dark);
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--brandcolor-dark);
+    cursor: pointer;
+  }
+  
+  .AdminProfile .sub-AdminProfile .details .profile .content input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--brandcolor-dark);
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: var(--brandcolor-light);
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    height: 45px;
+  }
+  
+  .AdminProfile .sub-AdminProfile .details .profile .content input[type=file]::file-selector-button:hover {
+    background: var(--brandcolor-dark);
+  }
+
+
+
+
+.AdminProfile .sub-AdminProfile .details .profile h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.AdminProfile .sub-AdminProfile .details .profile h5{
+    font-size: 1rem;
+}
+.AdminProfile .sub-AdminProfile .details .profile .content form{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+.AdminProfile .sub-AdminProfile .details .profile .content form .contain{
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    overflow: hidden;
+    background-color: var(--brandcolor-light);
+    
+}
+.AdminProfile .sub-AdminProfile .details .profile .content form button{
+    background-color: var(--brandcolor-dark);
+    color: var(--brandcolor-light);
+    border: var(--brandcolor-dark);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.AdminProfile .sub-AdminProfile .details .profile .img-div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border: 5px solid var(--brandcolor-dark);
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-right: 50px;
+    overflow: hidden;
+    z-index: 3;
+    background-image: url('../Assets/download.jpg');
+    background-size: contain;
+}
+.AdminProfile .sub-AdminProfile .details .profile .img-div img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.AdminProfile .sub-AdminProfile .details .container{
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 80px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards .icon{
+    background-color: #ffffff3c;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards .icon svg{
+    font-size: 50px;
+    color: #fff;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+    background-color: var(--subBrand);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards .text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards .text h5{
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.AdminProfile .sub-AdminProfile .details .container .cards .text p{
+    margin-bottom: 0;
+    font-size: .9rem;
+}
+
+.AdminProfile .sub-AdminProfile .chat{
+    width: 30%;
+    height: 500px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: var(--subBrand);
+    padding: 20px 10px 20px 0px;
+}
+
+@media screen and (max-width: 1273px) {
+    .AdminProfile .sub-AdminProfile{
+        flex-direction: column;
+    }
+    .AdminProfile .sub-AdminProfile .details{
+        width: 100%;
+    }
+    .AdminProfile .sub-AdminProfile .chat{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 1187px) {
+    
+    .AdminProfile .sub-AdminProfile .details .profile{
+        flex-direction: column;
+        max-height: fit-content;
+        align-items: center;
+    }
+    .AdminProfile .sub-AdminProfile .details .profile .content{
+        text-align: center;
+        display: contents;
+        justify-content: center;
+        width: 80%;
+        margin-left: 0;
+    }
+    .AdminProfile .sub-AdminProfile .details .profile .content form{
+        align-items: center;
+    }
+    .AdminProfile .sub-AdminProfile .details .profile .img-div{
+        margin-top: 20px;
+        margin-right: 0;
+        position: relative;
+        bottom: -50px;
+    }
+}

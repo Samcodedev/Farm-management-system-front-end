@@ -1,0 +1,23 @@
+[
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "0000-0000-0000-0000-000",
+        "type": "number",
+        "onChange": "cardcode"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "CV",
+        "type": "number",
+        "onChange": "cv"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "00/00",
+        "type": "number",
+        "onChange": "exp"
+    }
+]

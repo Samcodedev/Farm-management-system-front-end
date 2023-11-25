@@ -1,0 +1,86 @@
+[
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "upload stock image",
+        "type": "file",
+        "onChange": "stockimage"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock categories/type",
+        "type": "text",
+        "onChange": "stockcategories"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock breed",
+        "type": "text",
+        "onChange": "stockbreed"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock Gender",
+        "type": "text",
+        "onChange": "stockgender"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock group",
+        "type": "text",
+        "onChange": "stockgroup"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock age",
+        "type": "number",
+        "onChange": "stockage"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock weight in turns",
+        "type": "number",
+        "onChange": "stockweight"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock current location",
+        "type": "text",
+        "onChange": "stocklocation"
+    },
+    {
+        "area_label": "with textrea",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock Health Percentage",
+        "type": "text-area",
+        "onChange": "stockhealthpercente"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock health condition",
+        "type": "text",
+        "onChange": "stockhealthcondition"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock Veterinarian",
+        "type": "text",
+        "onChange": "stockveterinarian"
+    },
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Stock color",
+        "type": "text",
+        "onChange": "stockcolor"
+    }
+]

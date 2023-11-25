@@ -1,0 +1,9 @@
+[
+    {
+        "area_label": "Default",
+        "aria_describedby": "inputGroup-sizing-default",
+        "placeholder": "Email",
+        "type": "mail",
+        "onChange": "email"
+    }
+]
