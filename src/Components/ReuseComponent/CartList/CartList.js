@@ -29,7 +29,7 @@ const CartList = () => {
 
     const cart = async () =>{
         let result = await fetch(
-            'http://localhost:5001/api/cart/',
+            'https://farm-management-system-jsm2.onrender.com/api/cart/',
             {
               method: "get",
               credencials: "include",
@@ -87,7 +87,7 @@ const CartList = () => {
 
     const addCart = async () =>{
         let result = await fetch(
-            'http://localhost:5001/api/cart/',
+            'https://farm-management-system-jsm2.onrender.com/api/cart/',
             {
                 method: "post",
                 credencials: "include",
@@ -113,7 +113,7 @@ const CartList = () => {
 
     const delCart = async () =>{
         let result = await fetch(
-            'http://localhost:5001/api/cart/',
+            'https://farm-management-system-jsm2.onrender.com/api/cart/',
             {
                 method: "delete",
                 credencials: "include",

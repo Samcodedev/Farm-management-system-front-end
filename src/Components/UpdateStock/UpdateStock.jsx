@@ -68,7 +68,7 @@ const UpdateStock = () => {
       e.preventDefault();
       console.log(stockVerccineName);
       let result = await fetch(
-        `http://localhost:5001/api/stock/${stockId.state._id}`,
+        `https://farm-management-system-jsm2.onrender.com/api/stock/${stockId.state._id}`,
         {
           method: "put",
           credencials: "include",

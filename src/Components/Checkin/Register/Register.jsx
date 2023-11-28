@@ -27,7 +27,7 @@ const Register = () => {
     const handleRegister = async (e) =>{
       e.preventDefault();
       let result = await fetch(
-        "http://localhost:5001/api/client/register",
+        "https://farm-management-system-jsm2.onrender.com/api/client/register",
         {
           method: "post",
           credencials: "include",

@@ -43,7 +43,7 @@ const handleProfile = async () =>{
     //   console.log(parseJwt(token || validationToken));
     if(parseJwt(getToken).user.role === 'admin'){
       let result = await fetch(
-        `http://localhost:5001/api/admin/`,
+        `https://farm-management-system-jsm2.onrender.com/api/admin/`,
         {
           method: "get",
           credencials: "include",
@@ -68,7 +68,7 @@ const handleProfile = async () =>{
     }
     else if(parseJwt(getToken).user.role === 'client'){
       let result = await fetch(
-        `http://localhost:5001/api/client/`,
+        `https://farm-management-system-jsm2.onrender.com/api/client/`,
         {
           method: "get",
           credencials: "include",

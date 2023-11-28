@@ -9,7 +9,7 @@ const LandingPage = () => {
   
   const handleStock = async () =>{
     let result = await fetch(
-      "http://localhost:5001/api/stock/",
+      "https://farm-management-system-jsm2.onrender.com/api/stock/",
       {
         method: "get",
         credencials: "include",
@@ -25,7 +25,7 @@ const LandingPage = () => {
   
   const handleListedStock = async () =>{
     let result = await fetch(
-      "http://localhost:5001/api/sale/",
+      "https://farm-management-system-jsm2.onrender.com/api/sale/",
       {
         method: "get",
         credencials: "include",

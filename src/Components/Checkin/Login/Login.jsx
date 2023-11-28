@@ -35,7 +35,7 @@ const Login = () => {
   const handleRegister = async (e) =>{
     e.preventDefault();
     let result = await fetch(
-      `http://localhost:5001/api/${login}/login`,
+      `https://farm-management-system-jsm2.onrender.com/api/${login}/login`,
       {
         method: "post",
         credencials: "include",

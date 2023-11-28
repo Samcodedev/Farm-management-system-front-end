@@ -68,7 +68,7 @@ const StockProfile = () => {
 
     const farmerPicture = async (e) =>{
         let result = await fetch(
-            `http://localhost:5001/api/picture`,
+            `https://farm-management-system-jsm2.onrender.com/api/picture`,
             {
                 method: "get",
                 credencials: "include",
@@ -94,7 +94,7 @@ const StockProfile = () => {
     const ListStock = async (e) =>{
         e.preventDefault();
         let result = await fetch(
-            `http://localhost:5001/api/sale/${data._id}`,
+            `https://farm-management-system-jsm2.onrender.com/api/sale/${data._id}`,
             {
                 method: "post",
                 credencials: "include",

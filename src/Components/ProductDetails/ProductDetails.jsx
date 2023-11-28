@@ -79,7 +79,7 @@ const ProductDetails = () => {
     const addCart = async () =>{
         messageFunc('Adding to cart')
         let result = await fetch(
-            'http://localhost:5001/api/cart/',
+            'https://farm-management-system-jsm2.onrender.com/api/cart/',
             {
                 method: "post",
                 credencials: "include",

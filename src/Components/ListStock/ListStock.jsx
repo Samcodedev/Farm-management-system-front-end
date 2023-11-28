@@ -32,7 +32,7 @@ const ListStock = () => {
         e.preventDefault();
         console.log(stockId.state);
         let result = await fetch(
-            `http://localhost:5001/api/sale/${stockId.state._id}`,
+            `https://farm-management-system-jsm2.onrender.com/api/sale/${stockId.state._id}`,
             {
                 method: "post",
                 credencials: "include",

@@ -12,7 +12,7 @@ const StockDataPage = () => {
 
   const profilePicture = async () =>{
     let result = await fetch(
-      `http://localhost:5001/api/picture/`,
+      `https://farm-management-system-jsm2.onrender.com/api/picture/`,
       {
         method: "get",
         credencials: "include",
@@ -30,7 +30,7 @@ const StockDataPage = () => {
 
   const handleRegister = async () =>{
     let result = await fetch(
-      "http://localhost:5001/api/stock/",
+      "https://farm-management-system-jsm2.onrender.com/api/stock/",
       {
         method: "get",
         credencials: "include",

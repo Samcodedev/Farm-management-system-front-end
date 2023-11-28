@@ -88,7 +88,7 @@ const CreateStock = () => {
     // const upload = async (e) =>{
     //   // console.log(backendResponse._id);
     //   let result = await fetch(
-    //     `http://localhost:5001/api/stockPicture/654de9b9cb28b2cf3cec20a5`,
+    //     `https://farm-management-system-jsm2.onrender.com/api/stockPicture/654de9b9cb28b2cf3cec20a5`,
     //     {
     //       method: "post",
     //       credencials: "include",
@@ -124,7 +124,7 @@ const CreateStock = () => {
       e.preventDefault();
       console.log(stockVerccineName);
       let result = await fetch(
-        "http://localhost:5001/api/stock/register",
+        "https://farm-management-system-jsm2.onrender.com/api/stock/register",
         {
           method: "post",
           credencials: "include",
