@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './StockProfile.css'
-import img from '../Assets/dummy.png'
 // import weader from '../../../public/weather/64x64/day/ii3.png'
 // import img2 from '../Assets/weather/64x64/day/'
 import farmer from '../Assets/download.jpg'
@@ -17,7 +16,6 @@ const StockProfile = () => {
     const weatherapi = localStorage.getItem('weather')
     let weather = JSON.parse(weatherapi)
     let token = localStorage.getItem('accessToken')
-    let validationToken = localStorage.getItem('validationToken')
     let [user, userFunc] = useState()
     const [show, setShow] = useState(false);
 

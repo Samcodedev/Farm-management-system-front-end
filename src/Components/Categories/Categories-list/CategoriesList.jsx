@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import './CategoriesList.css'
 import ProductCards from '../../ReuseComponent/ProductCards/ProductCards'
 import { ScrollingCarousel } from '@trendyol-js/react-carousel';
 
 const CategoriesList = ({data}) => {
 
-  const [backendResponse, backendResponseFunc] = useState()
   const [listedProduct, listedProductFunc] = useState()
   const savedStock = localStorage.getItem('listedstocks')
 

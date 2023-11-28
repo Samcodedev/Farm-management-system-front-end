@@ -1,6 +1,5 @@
 import React from 'react'
 import './Stocks.css'
-import img from '../../Assets/animal-2.jpeg'
 import {GiCow, GiHighGrass} from 'react-icons/gi'
 import {FaUserDoctor} from 'react-icons/fa6'
 import {MdManageAccounts, MdHealthAndSafety} from 'react-icons/md'

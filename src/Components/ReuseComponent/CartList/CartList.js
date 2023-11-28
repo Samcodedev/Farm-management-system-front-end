@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './CartList.css'
-import img from '../../Assets/animal-2.jpeg'
 
 import {MdOutlineDeleteForever, MdShoppingCartCheckout} from 'react-icons/md'
 import {RxUpdate} from 'react-icons/rx'

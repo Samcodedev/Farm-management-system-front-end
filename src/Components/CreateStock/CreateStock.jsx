@@ -39,51 +39,50 @@ const CreateStock = () => {
   const [backendResponse, backendResponseFunc] = useState({})
   const [cloudinary, cloudinaryFunc] = useState()
   const inputRef = useRef(null);
-  const [postImage, setPostImage] = useState('')
 
 
   const navigate = useNavigate()
   
 
-    const compressImage = () => {
-      const input = inputRef.current;
-      const originalImage = document.getElementById('originalImage');
-      const compressedImage = document.getElementById('compressedImage');
+    // const compressImage = () => {
+    //   const input = inputRef.current;
+    //   const originalImage = document.getElementById('originalImage');
+    //   const compressedImage = document.getElementById('compressedImage');
   
-      const file = input.files[0];
+    //   const file = input.files[0];
   
-      if (file) {
-        const reader = new FileReader();
+    //   if (file) {
+    //     const reader = new FileReader();
   
-        reader.onload = (e) => {
-          const img = new Image();
-          img.src = e.target.result;
+    //     reader.onload = (e) => {
+    //       const img = new Image();
+    //       img.src = e.target.result;
   
-          img.onload = () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
+    //       img.onload = () => {
+    //         const canvas = document.createElement('canvas');
+    //         const ctx = canvas.getContext('2d');
   
-            // Set the canvas size to the image size
-            canvas.width = img.width;
-            canvas.height = img.height;
+    //         // Set the canvas size to the image size
+    //         canvas.width = img.width;
+    //         canvas.height = img.height;
   
-            // Draw the image onto the canvas
-            ctx.drawImage(img, 0, 0, img.width, img.height);
+    //         // Draw the image onto the canvas
+    //         ctx.drawImage(img, 0, 0, img.width, img.height);
   
-            // Get the compressed image as a data URL
-            const compressedDataURL = canvas.toDataURL('image/jpeg', 0.1); // Adjust quality as needed
+    //         // Get the compressed image as a data URL
+    //         const compressedDataURL = canvas.toDataURL('image/jpeg', 0.1); // Adjust quality as needed
   
-            // Display the original and compressed images
-            originalImage.src = e.target.result;
-            compressedImage.src = compressedDataURL;
-            setPostImage(compressedDataURL)
-            console.log(compressedDataURL);
-          };
-        };
+    //         // Display the original and compressed images
+    //         originalImage.src = e.target.result;
+    //         compressedImage.src = compressedDataURL;
+    //         setPostImage(compressedDataURL)
+    //         console.log(compressedDataURL);
+    //       };
+    //     };
   
-        reader.readAsDataURL(file);
-      }
-    };
+    //     reader.readAsDataURL(file);
+    //   }
+    // };
   
     // const upload = async (e) =>{
     //   // console.log(backendResponse._id);
@@ -301,9 +300,9 @@ const CreateStock = () => {
         <div>
           {/* <input type="file" accept="image/*" ref={inputRef} onChange={compressImage} />
           <br /> */}
-          <img id="originalImage" alt="Original Image" style={{ display: 'none' }} />
+          <img id="originalImage" alt="Original-Image" style={{ display: 'none' }} />
           <br />
-          <img id="compressedImage" alt="Compressed Image" style={{ display: 'none' }} />
+          <img id="compressedImage" alt="Compressed-Image" style={{ display: 'none' }} />
         </div>
     </div>
   )

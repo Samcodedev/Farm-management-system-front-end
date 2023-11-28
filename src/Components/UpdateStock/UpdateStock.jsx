@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Data from './Data.json'
 import Input from '../ReuseComponent/Input'
 import './UpdateStock.css'
-import Axios from 'axios'
 
 import { useLocation } from 'react-router-dom'
 

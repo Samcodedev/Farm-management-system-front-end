@@ -5,7 +5,6 @@ import { TbSquareCheck } from 'react-icons/tb'
 import { BsCartPlus } from 'react-icons/bs'
 import { RxCross2 } from 'react-icons/rx'
 import { BiLoaderAlt } from 'react-icons/bi'
-import img from '../Assets/animal-2.jpeg'
 import { useLocation } from 'react-router-dom'
 
 import Accordion from 'react-bootstrap/Accordion'

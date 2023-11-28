@@ -1,11 +1,9 @@
 import React, { useState, useEffect , useRef } from 'react'
 import './AdminProfile.css'
-import img from '../Assets/Farmer.jpg'
 import { MdAddChart } from 'react-icons/md'
 import { BsListCheck } from 'react-icons/bs'
 import { RiLineChartLine } from 'react-icons/ri'
 import { MdPlaylistRemove, MdOutlineFileUpload } from 'react-icons/md'
-import Axios from 'axios'
 
 import { useLocation } from 'react-router-dom'
 
@@ -14,19 +12,16 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 // import PieChartShaped from '../ReuseComponent/Charts/PieChartShaped'
 import LineCharts from '../ReuseComponent/Charts/LineCharts'
-import Table from 'react-bootstrap/esm/Table'
 import DataTable from '../ReuseComponent/Table/DataTable'
 
 const AdminProfile = () => {
 
-const data = useLocation()
 
 const [chartActive, chartActiveFunc] = useState(0)
 let [Name, NameFunc] = useState()
 let [Email, EmailFunc] = useState()
 let [Phone, PhoneFunc] = useState()
 let [Role, RoleFunc] = useState({})
-let [ids, idFunc] = useState()
 const [stockCreated, stockCreatedFunc] = useState()
 const [stockListed, stockListedFunc] = useState()
 const [createdStock, createdStockFunc] = useState()
@@ -97,7 +92,6 @@ const handleProfile = async () =>{
       result = await result.json();
       let {Name, Email, Phone, stockCreated, listedStock, _id } = result
       NameFunc(Name)
-      idFunc(_id)
       EmailFunc(Email)
       PhoneFunc(Phone)
       RoleFunc(result)
@@ -128,7 +122,7 @@ const handleProfile = async () =>{
       );
       result = await result.json();
       console.log(result);
-      let {Name, Email, Phone, cart, image } = result
+      let {Name, Email, Phone, cart } = result
       // quantityFunc(cart.cart.products)
       NameFunc(Name)
       EmailFunc(Email)
@@ -304,9 +298,9 @@ const handleProfile = async () =>{
         <div>
           {/* <input type="file" accept="image/*" ref={inputRef} onChange={compressImage} />
           <br /> */}
-          <img id="originalImage" alt="Original Image" style={{ display: 'none' }} />
+          <img id="originalImage" alt="Original-Image" style={{ display: 'none' }} />
           <br />
-          <img id="compressedImage" alt="Compressed Image" style={{ display: 'none' }} />
+          <img id="compressedImage" alt="Compressed-Image" style={{ display: 'none' }} />
         </div>
         <div className="chat">
           <LineCharts 
